@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Instituto de Educación</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <header>
+        <h1>Instituto de Educación</h1>
+        
+        <nav id="menu">
+        
+            <a href="#info">Información</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#RegistrarCurso">Registrar Curso</a>
+            <a href="#contacto">Inscribirse</a>
+        
+        </nav>
+    </header>
+
+    <main>
+        <section id="info"> 
+            <h2>Presentación de nuestros cursos</h2>
+            <p>En nuestro instituto, nos enorgullece abrir las inscripciones a nuestros cursos extracurriculares, diseñados para potenciar el éxito de nuestros estudiantes fuera del aula tradicional. Estas propuestas están planificadas para fomentar el pensamiento crítico, la creatividad y la innovación a través de actividades de deporte, arte y tecnología, brindando a los alumnos las habilidades prácticas necesarias para descubrir sus talentos y enfrentar los desafíos del mundo actual.</p>
+        </section>
+
+    <section id="cursos" class="cursos">
+        <h2>Filtros</h2>
+
+        <div class="acciones">
+            <button id="btnTodos">Mostrar todos</button>
+            <button id="btnActivos">Mostrar activos</button>
+            <button id="btnInactivos">Mostrar inactivos</button>
+        </div>
+
+        <div id="listadoCursos" class="Cursos"></div>
+    </section>
+    <section id="RegistrarCurso" class="RegistrarCurso">
+        <h2>Registrar curso</h2>
+            <form id="formcurso">
+                <input type="text" id="nombre" placeholder="Nombre del curso">
+                <select id="categoria">
+                    <option value="Ciencias">Ciencias</option>
+                    <option value="Deportes">Deportes</option>
+                    <option value="Arte">Arte</option>
+                    <option value="Tecnología">Tecnología</option>
+                </select>
+                <input type="number" id="duracion" placeholder="Duración (meses)">
+                <input type="number" id="cupos" placeholder="Número de cupos">
+                    <button type="submit">Guardar curso</button>
+            </form>
+    <p id="mensaje"></p>
+    </section>
+    </main>
+    <footer>
     
+    <h1>
+        Parcial de programacion n2
+    </h1>
+    <h2>
+        Maximiliano Cuassolo
+    </h2>
+    </footer>
+
+<script src="app.js"></script>
 </body>
 </html>
